@@ -16,4 +16,6 @@ func main() {
 	var str = fmt.Sprintln("My name is ", name, "and my age is ", age, "and my score is ", score)
 	fmt.Print(str)
 	/*how to save the formatted string into a variable str using Sprintln*/
+
+	//you can use this link to find all formatting verbs: https://pkg.go.dev/fmt
 }
