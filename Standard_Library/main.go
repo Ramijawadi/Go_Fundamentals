@@ -32,4 +32,6 @@ func main() {
 	names := []string{"Salah", "Alex", "Yuchi", "Bali"}
 	sort.Strings(names)
 	fmt.Println(names)
+	fmt.Println(sort.SearchStrings(names, "Salah"))
+
 }
