@@ -2,11 +2,12 @@ package main
 
 import (
 	"fmt"
+	"sort"
 	"strings"
 )
 
 func main() {
-	greetings := "Hello word"
+	greetings := "Hello my friend"
 
 	fmt.Println(greetings)
 
@@ -15,5 +16,13 @@ func main() {
 	fmt.Println(strings.Contains(greetings, "hello"))
 	fmt.Println(strings.Contains(greetings, "Hello"))
 	fmt.Println(strings.ReplaceAll(greetings, "Hello", "hi"))
+	fmt.Println(strings.ToUpper(greetings))    // to majuscule = HELLO MY FRIEND
+	fmt.Println(strings.Index(greetings, "m")) //6
+	fmt.Println(strings.Split(greetings, " ")) //[Hello my friend]
 
+	fmt.Println("original value is ", greetings)
+
+	ages := []int{75, 20, 90, 10, 30}
+	sort.Ints(ages) //method sort the table of ages  to [10 20 30 75 90]
+	fmt.Println(ages)
 }
