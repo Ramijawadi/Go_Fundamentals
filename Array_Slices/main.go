@@ -8,7 +8,7 @@ func main() {
 	var arr [3]int = [3]int{1, 2, 3}
 	fmt.Println("Array:", arr, "longuer est ", len(arr))
 
-	names := [4]string{"Alice", "Bob", "Charlie", "David"}
+	names := [4]string{"Alice", "Bob", "Charlie"}
 	//we can update the table bob with Rami
 	names[1] = "Rami"
 	fmt.Println("Names:", names, "longuer est ", len(names))
@@ -36,6 +36,9 @@ func main() {
 	rangeOne := names[1:3]
 	fmt.Println("Range One:", rangeOne, "longuer est ", len(rangeOne))
 	//Range One: [Rami Charlie] longuer est  2
+
+	rangeOne = append(rangeOne, "Samir")
+	fmt.Println("rangeOne updated", rangeOne)
 
 	rangeTwo := names[:4]
 	fmt.Println("Range Two:", rangeTwo, "longuer est ", len(rangeTwo))
