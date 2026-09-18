@@ -14,5 +14,6 @@ func main() {
 
 	fmt.Println(strings.Contains(greetings, "hello"))
 	fmt.Println(strings.Contains(greetings, "Hello"))
+	fmt.Println(strings.ReplaceAll(greetings, "Hello", "hi"))
 
 }
