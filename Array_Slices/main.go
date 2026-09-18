@@ -20,4 +20,15 @@ func main() {
 	//	we can also update elements in arr1
 	arr1[2] = 10
 	fmt.Println("Updated Array1:", arr1, "longuer est ", len(arr1))
+
+	//slice exemple
+
+	scores := []int{12, 15, 20}
+	fmt.Println("Scores:", scores, "longuer est ", len(scores))
+
+	scores[1] = 18
+	fmt.Println("Updated Scores:", scores, "longuer est ", len(scores))
+
+	scores = append(scores, 90)
+	fmt.Println("Appended Scores:", scores, "longuer est ", len(scores))
 }
