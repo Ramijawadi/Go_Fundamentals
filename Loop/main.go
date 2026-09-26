@@ -12,7 +12,14 @@ func main() {
 	// 	x++
 	// }
 
-	for i := 0; i < 7; i++ {
-		fmt.Println("la valeur de i = ", i)
+	// for i := 0; i < 7; i++ {
+	// 	fmt.Println("la valeur de i = ", i)
+	// }
+
+	names := []string{"rami", "alex", "bruno", "amine"}
+
+	for i := 0; i < len(names); i++ {
+
+		fmt.Println("la valeur des names = ", names[i])
 	}
 }
