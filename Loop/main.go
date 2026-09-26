@@ -23,9 +23,14 @@ func main() {
 	// 	fmt.Println("la valeur des names = ", names[i])
 	// }
 
-	for index, value := range names {
+	// for index, value := range names {
 
-		fmt.Printf("la index %v et la valeur  %v \n", index, value)
+	// 	fmt.Printf("la index %v et la valeur  %v \n", index, value)
+	// }
+
+	for _, value := range names {
+
+		fmt.Printf("the value is %v \n", value)
 	}
 
 }
