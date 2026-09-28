@@ -30,9 +30,15 @@ func main() {
 		1234567890: "Rami",
 		8596668588: "Alice",
 		9891234567: "Bob",
-		2366554321: "Charlie",
 	}
 
 	fmt.Println(phonenumber)
 	fmt.Println(phonenumber[1234567890])
+
+	phonenumber[9891234567] = "Wassim"
+	fmt.Println(phonenumber)
+
+	phonenumber[8596668588] = "SARA"
+	fmt.Println(phonenumber)
+
 }
