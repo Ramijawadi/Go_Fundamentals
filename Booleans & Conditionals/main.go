@@ -31,9 +31,13 @@ func main() {
 		if index == 1 {
 
 			fmt.Println("Continuing at position:", index)
-			continue
+			continue // skip the rest of the loop when index is 1 return to the next  table row iteration
 		}
+		if index > 2 {
+			fmt.Println("Beaking at this position ", index)
+			break // exit the loop when index is greater than 2
 
+		}
 		fmt.Printf("the value at pos %v is %v \n", index, value)
 	}
 }
