@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"math"
 )
 
 func sayHello(n string) {
@@ -19,9 +20,22 @@ func cycleName(n []string, f func(string)) {
 	}
 }
 
+func circleArea(r float64) float64 { //float64 is the return type
+	return math.Pi * r * r // use math library to calculate the area of a circle
+}
+
 func main() {
+
+	sayHello("mohamed")
+	sayBye("mohamed")
 
 	cycleName([]string{"Rami", "Alice", "Bob"}, sayHello)
 	cycleName([]string{"Rami", "Alice", "Bob"}, sayBye)
+
+	a1 := circleArea(7.5) // we pass 7.5 as argument r
+	a2 := circleArea(10.0)
+
+	fmt.Println(a1, a2)
+	fmt.Printf("Area of circle 1 is %0.3f  and the circle 2 is %0.3f", a1, a2)
 
 }
