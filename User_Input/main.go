@@ -22,7 +22,7 @@ func getUserInput(prompt string, r *bufio.Reader) (string, error) {
 //function for input from the user
 
 func createBill() bill {
-
+	//reader est un lecteur locale
 	reader := bufio.NewReader(os.Stdin) //NewReader pour les informations ; Stdin lire depuis l'entrée standard
 	// fmt.Printf("enter the facture name :  ")
 	// name, _ := reader.ReadString('\n') //lire ce que l utulisateur tape et save dans name
@@ -35,8 +35,16 @@ func createBill() bill {
 
 }
 
+func Promptoption(b bill) {
+
+	reader := bufio.NewReader(os.Stdin)
+	option, _ := getUserInput("Enter a - Create facture , s- save facture, c - add paye: ", reader)
+	fmt.Println("selected option:", option)
+}
+
 func main() {
 	mybill := createBill()
+	Promptoption(mybill)
 	fmt.Println(mybill)
 
 }
