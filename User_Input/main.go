@@ -73,7 +73,9 @@ func Promptoption(b bill) {
 		Promptoption(b)
 
 	case "s":
-		fmt.Println("the  facture / bill is saved - ", b)
+
+		b.save()
+		fmt.Println("the  facture / bill is saved  - ", b.name)
 
 	default:
 		fmt.Println("Invalid option")
