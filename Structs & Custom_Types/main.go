@@ -4,7 +4,7 @@ import "fmt"
 
 func main() {
 
-	mybill := newBill("My Bill")
-	fmt.Println(mybill)
+	mybill := newBill("Myy Bill") //appel instance de la facture
+	fmt.Println(mybill.format())
 
 }
