@@ -38,8 +38,27 @@ func createBill() bill {
 func Promptoption(b bill) {
 
 	reader := bufio.NewReader(os.Stdin)
-	option, _ := getUserInput("Enter a - Create facture , s- save facture, c - add paye: ", reader)
+	option, _ := getUserInput("choose option ( a - Create facture , s- save facture, c - add paye ): ", reader)
 	fmt.Println("selected option:", option)
+
+	switch option {
+	case "a":
+		name, _ := getUserInput("enter the facture name :  ", reader)
+		price, _ := getUserInput("enter the price :  ", reader)
+
+		fmt.Println(name, price)
+
+	case "c":
+		paye, _ := getUserInput("enter the paye ($):  ", reader)
+		fmt.Println(paye)
+	case "s":
+		fmt.Println("Save facture selected")
+
+	default:
+		fmt.Println("Invalid option")
+		Promptoption(b)
+	}
+
 }
 
 func main() {
